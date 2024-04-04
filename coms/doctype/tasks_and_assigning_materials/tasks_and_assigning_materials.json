@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:project_name",
+ "creation": "2024-04-01 00:53:09.255324",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "add_task",
+  "add_employees_and_task",
+  "adding_items"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0634\u0631\u0648\u0639",
+   "options": "Project",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "add_task",
+   "fieldtype": "Table",
+   "label": "\u0627\u0636\u0627\u0641\u0629 \u0627\u0644\u0645\u0647\u0627\u0645",
+   "options": "Task Container",
+   "reqd": 1
+  },
+  {
+   "fieldname": "add_employees_and_task",
+   "fieldtype": "Table",
+   "label": "\u0627\u0636\u0627\u0641\u0629 \u0645\u0648\u0638\u0641\u064a\u0646 \u0644\u0644\u0645\u0647\u0645\u0629",
+   "options": "Employee Container",
+   "reqd": 1
+  },
+  {
+   "fieldname": "adding_items",
+   "fieldtype": "Table",
+   "label": "\u0627\u0636\u0627\u0641\u0629 \u0645\u0648\u0627\u062f",
+   "options": "Item Container",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-05 00:58:25.180934",
+ "modified_by": "Administrator",
+ "module": "coms",
+ "name": "Tasks and Assigning Materials",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

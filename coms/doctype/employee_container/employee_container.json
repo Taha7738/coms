@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-01 00:09:23.742360",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name_tab",
+  "last_name_tab",
+  "position_tab"
+ ],
+ "fields": [
+  {
+   "fetch_from": "first_name_tab.position",
+   "fieldname": "position_tab",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0648\u0638\u064a\u0641\u0629",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "first_name_tab.last_name",
+   "fieldname": "last_name_tab",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0644\u0642\u0628",
+   "read_only": 1
+  },
+  {
+   "fieldname": "first_name_tab",
+   "fieldtype": "Link",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0648\u0638\u0641 ",
+   "options": "Employee"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-05 00:37:32.462585",
+ "modified_by": "Administrator",
+ "module": "coms",
+ "name": "Employee Container",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

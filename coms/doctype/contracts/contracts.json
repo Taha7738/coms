@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:customer_name",
+ "creation": "2024-03-30 23:33:14.846784",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "customer_name",
+  "project_cost",
+  "land_area",
+  "roof_type",
+  "building_facade_type",
+  "number_of_stories",
+  "rules",
+  "basement",
+  "ground_tank",
+  "additional_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "\u0633\u0644\u0633\u0644\u0629 \u0627\u0644\u062a\u0633\u0645\u064a\u0629",
+   "no_copy": 1,
+   "options": "PROJ-.####",
+   "print_hide": 1,
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "project_cost",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u062a\u0643\u0644\u0641\u0629 \u0627\u0644\u0645\u0634\u0631\u0648\u0639",
+   "reqd": 1
+  },
+  {
+   "fieldname": "land_area",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0645\u0633\u0627\u062d\u0629 \u0627\u0644\u0627\u0631\u0636"
+  },
+  {
+   "fieldname": "roof_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0633\u0642\u0641",
+   "options": "\u0634\u0639\u0628\u064a\n\u0645\u0633\u0644\u062d / \u0647\u0631\u062f\u064a\n\u0645\u0633\u0644\u062d/ \u0628\u0644\u0637\u0629"
+  },
+  {
+   "fieldname": "building_facade_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u0646\u0648\u0639 \u0648\u0627\u062c\u0647\u0629 \u0627\u0644\u0639\u0645\u0627\u0631\u0629 ",
+   "options": "\u062d\u062c\u0631\n\u0628\u0644\u0643\n\u064a\u0627\u062c\u0648\u0631"
+  },
+  {
+   "fieldname": "number_of_stories",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0639\u062f\u062f \u0637\u0648\u0627\u0628\u0642 \u0627\u0644\u0639\u0645\u0627\u0631\u0629"
+  },
+  {
+   "default": "0",
+   "fieldname": "rules",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "\u0642\u0648\u0627\u0639\u062f"
+  },
+  {
+   "default": "0",
+   "fieldname": "basement",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "\u0628\u062f\u0631\u0648\u0645"
+  },
+  {
+   "default": "0",
+   "fieldname": "ground_tank",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "\u062e\u0632\u0627\u0646 \u0627\u0631\u0636\u064a"
+  },
+  {
+   "fieldname": "additional_details",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u062e\u0631\u0649"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0639\u0645\u064a\u0644",
+   "options": "Customer",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-04 23:16:51.593769",
+ "modified_by": "Administrator",
+ "module": "coms",
+ "name": "Contracts",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_contracts",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
